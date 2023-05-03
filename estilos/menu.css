@@ -1,0 +1,87 @@
+body{
+    font-family: "Roboto", sans-serif;
+}
+.logo{
+    margin: 0.5em;
+    padding: 0px;
+   
+    margin-left: 2em;
+}
+/*apartado para hacer la animacion al poner por encima el raton en la barra de navegación*/
+.asd a{
+    position: relative;
+    text-decoration: none;
+    color: #1E7942 !important;
+    font-size: 20px;
+    letter-spacing: .5px;
+    padding: 0 20px;
+    cursor: pointer;
+    margin: 0.5em;
+}
+
+.asd a::before,
+.asd a::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background: #1E7942;
+    transition: .2s;
+}
+
+.asd a::after{
+    left: 0;
+    bottom: -10px;
+}
+
+.asd a::before{
+    right: 0;
+    top: -10px;
+}
+
+.asd a:hover::after,
+.asd a:hover::before{
+    width: 100%;
+}
+
+.btnLogin{
+   
+    border-radius: 15px;
+    text-align: center;
+    color: #1E7942  !important;
+    font-size: 20px;
+    padding: 0.5em 1.2em;
+    background: white;
+    border: 1px solid;
+    border-color: #1E7942 ;
+    position: relative;
+    
+}
+
+.btnLogin:hover{
+    background: #1E7942;
+    color: white !important;
+}
+
+.btnFor{
+    background-color: #1E7942;
+    color: white;
+    
+}
+
+form label{
+    color: #1E7942;
+}
+
+.lista{
+    list-style: none;
+}
+
+.lista a{
+    text-decoration: none;
+    color: black;
+}
+
+.active{
+    font-weight: bold;
+}

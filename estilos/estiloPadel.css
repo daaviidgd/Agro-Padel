@@ -1,0 +1,33 @@
+body{
+    font-family: "Roboto", sans-serif;
+}
+.fecha{
+    width: fit-content;
+}
+
+.ocupada{
+    background-color: #ff3a1e;
+    color: white;
+}
+
+.btnRes{
+    background-color: #1E7942;
+    color: white;
+}
+
+label{
+    color: #1E7942;
+}
+
+h2{
+    color: #1E7942;
+}
+
+table th{
+    color: #1E7942;
+    font-weight: bold;
+}
+
+table td{
+    color: #1E7942;
+}

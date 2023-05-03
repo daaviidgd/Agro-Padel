@@ -1,0 +1,35 @@
+body{
+    font-family: "Roboto", sans-serif;
+}
+form{
+    border: 1px solid #1E7942;
+    border-radius: 15px;
+}
+
+
+#footer{
+    width: 100%;
+     position: absolute;
+     bottom: 0;
+}
+
+#btnSubmit{
+    border:  1px solid #1E7942;
+   
+}
+
+/*media queries para el footer*/
+@media (max-width: 768px) {
+    
+
+    #footer{
+        position: relative;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    
+    #footer{
+        position: relative;
+    }
+}
