@@ -5,6 +5,13 @@ Navegador: preferible Chrome.
 Librerias: estan todas las librerias necesarias integradas en el proyecto, algunas necesitan conexión a internet.
 
 #Base de datos a importar ya sea en local en XAMPP/MySQL o en un host en su sitio respectivo
+
+
+
+
+
+
+
 -- phpMyAdmin SQL Dump
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
