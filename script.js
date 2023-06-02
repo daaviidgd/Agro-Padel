@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  updateLoginContent();
     var panelOne = $('.form-panel.two').height(),
       panelTwo = $('.form-panel.two')[0].scrollHeight;
   
@@ -25,7 +26,7 @@ $(document).ready(function() {
     });
   
     
-    updateLoginContent();
+    
 
     // Función para procesar el registro
   function register() {
@@ -144,7 +145,7 @@ function updateLoginContent() {
   } else {
     // Usuario no logueado
     var loginContent = `
-      <div class="container-fluid" id="generalLogin">
+      
         <div class="form" id="log">
           <div class="form-toggle"></div>
           <div class="form-panel one">
@@ -200,7 +201,7 @@ function updateLoginContent() {
             </div>
           </div>
         </div>
-      </div>
+      
     `;
     $("#generalLogin").html(loginContent);
   }
