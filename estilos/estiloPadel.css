@@ -10,6 +10,13 @@ body{
     color: white;
 }
 
+.disponible{
+    background-color:  #8af7b6;
+}
+.noDisponible{
+    background-color: #847f7e;
+    color: white;
+}
 .btnRes{
     background-color: #1E7942;
     color: white;

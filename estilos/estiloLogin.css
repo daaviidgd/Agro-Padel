@@ -32,7 +32,7 @@ y posteriormente se configura la animación*/
     border-radius: 4px;
     box-shadow: 0 0 10px #1E7942;
     box-sizing: border-box;
-    margin: 30px auto 130px;
+    margin: 20px auto 130px;
     overflow: hidden;
 }
 .form-toggle {
@@ -239,8 +239,16 @@ y posteriormente se configura la animación*/
     color: #FFFFFF;
 }
   
-
-
+#misReservas{
+    background: #1E7942;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+#cerrarSesion{
+    background: #1E7942;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
 #footer{
     width: 100%;
     position: absolute;
