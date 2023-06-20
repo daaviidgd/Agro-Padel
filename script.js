@@ -79,11 +79,14 @@ $(document).ready(function() {
       success: function(response) {
         // Manejar la respuesta del servidor
         alert(response); // Mostrar la respuesta del servidor en un alert
-        // Almacenar el estado de inicio de sesión en la sesión de usuario
-        sessionStorage.setItem('loggedIn', 'true');
-
-        // Actualizar el contenido del div generalLogin
-        updateLoginContent();
+        if(response == "Usuario registrado exitosamente"){
+          // Almacenar el estado de inicio de sesión en la sesión de usuario
+          sessionStorage.setItem('loggedIn', 'true');
+          
+          // Actualizar el contenido del div generalLogin
+          updateLoginContent();
+        }
+        
       },
       error: function() {
         alert('Error en la solicitud AJAX');

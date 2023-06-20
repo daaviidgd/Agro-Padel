@@ -73,11 +73,11 @@
       <form class="row g-3" >
         <div class="col-md-6 my-3">
           <label for="inputNombre" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="inputNombre" />
+          <input type="text" class="form-control" id="inputNombre" required/>
         </div>
         <div class="col-md-6 my-3">
           <label for="inputApe" class="form-label">Apellidos</label>
-          <input type="text" class="form-control" id="inputApe" />
+          <input type="text" class="form-control" id="inputApe" required/>
         </div>
 
         <div class="col-md-6 my-3">
@@ -88,13 +88,13 @@
             type="text"
             class="form-control"
             id="inputHora"
-            placeholder="Entre las 16:00 y 20:00 por ejemplo"
+            placeholder="Entre las 16:00 y 20:00 por ejemplo" required
           />
         </div>
         <div class="col-md-4 my-3">
           <label for="inputNivel" class="form-label">Nivel de juego</label
           ><br />
-          <select id="inputNivel" class="form-select">
+          <select id="inputNivel" class="form-select" required>
             <option selected>Selecciona tu nivel</option>
             <option>Principiante</option>
             <option>Intermedio</option>
@@ -103,7 +103,7 @@
         </div>
         <div class="col-md-2 my-3">
           <label for="inputEdad" class="form-label">Edad</label>
-          <input type="number" class="form-control" id="inputEdad" />
+          <input type="number" class="form-control" id="inputEdad" required/>
         </div>
         <div class="col-12 my-3">
           <label  class="form-label"
@@ -139,10 +139,39 @@
         </div>
         <div class="col-12 my-3 text-center">
           <button type="submit" class="btn btnFor" id="clases" onclick="mostrarMensaje()">Ingresar</button>
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
           <script>
-            function mostrarMensaje() {
-              alert("Enviado");
-            }
+            $(document).ready(function() {
+              $('#clases').click(function(event) {
+                event.preventDefault(); // Evita que el formulario se envíe por defecto
+              
+                var nombre = $('#inputNombre').val();
+                var apellidos = $('#inputApe').val();
+                var hora = $('#inputHora').val();
+                var nivel = $('#inputNivel').val();
+                var edad = $('#inputEdad').val();
+                var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+              
+                if (
+                  nombre &&
+                  apellidos &&
+                  hora &&
+                  nivel !== "Selecciona tu nivel" &&
+                  edad &&
+                  checkboxes.length > 0
+                ) {
+                  alert('Enviado');
+                  $('#inputNombre').val('');
+                  $('#inputApe').val('');
+                  $('#inputHora').val('');
+                  $('#inputNivel').val('Selecciona tu nivel');
+                  $('#inputEdad').val('');
+                  checkboxes.forEach(function(checkbox) {
+                    checkbox.checked = false;
+                  });
+                }
+              });
+            });
           </script>
         </div>
       </form>

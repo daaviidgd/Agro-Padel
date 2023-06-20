@@ -36,7 +36,7 @@ if (isset($_GET['dia']) && isset($_GET['hora']) && isset($_GET['pista']) && isse
         echo '<p style="font-size: 18px;">Hora: ' . $hora . ':00</p>';
         echo '<p style="font-size: 18px;">Pista: ' . $pista . '</p>';
         echo '</div>';
-        echo '<p style="text-align: center; margin-top: 20px;"><a style="color: blue; font-size: 16px;" href="javascript:history.back()">Volver</a></p>';
+        echo '<p style="text-align: center; margin-top: 20px;"><a style="color: blue; font-size: 16px;" href="Padel.html">Volver</a></p>';
 
     } else {
         // Manejar el caso en que ocurra un error al ejecutar la consulta
@@ -47,9 +47,9 @@ if (isset($_GET['dia']) && isset($_GET['hora']) && isset($_GET['pista']) && isse
     $conn->close();
 }else{
     echo '<div style="text-align: center; margin-top: 20px;">';
-    echo '<p style="color: red; font-size: 16px;">Debes estar loggeado</p>';
+    echo '<p style="color: red; font-size: 20px;">Debes estar loggeado</p>';
     echo '</div>';
-    echo '<p style="text-align: center; margin-top: 20px;"><a style="color: blue; font-size: 16px;" href="javascript:history.back()">Volver</a></p>';
+    echo '<p style="text-align: center; margin-top: 20px;"><a style="color: blue; font-size: 16px;" href="Padel.html">Volver</a></p>';
 }
 
 

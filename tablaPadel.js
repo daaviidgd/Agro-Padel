@@ -18,6 +18,7 @@ $(document).ready(function() {
         data: { fecha: fecha },
         success: function(response) {
           $("#resultadoTabla").html(response);
+          
         },
         error: function() {
           $("#resultadoTabla").html("Error en la solicitud AJAX.");

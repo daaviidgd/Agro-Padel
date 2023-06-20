@@ -253,6 +253,7 @@ y posteriormente se configura la animación*/
     width: 100%;
     position: absolute;
     bottom: 0;
+    padding-top: 1em;
 }
 
 /*media queries para el footer y el login*/

@@ -174,11 +174,26 @@
         </div>
         <button type="submit" class="btn d-block mx-auto btnFor" onclick="mostrarMensaje()">Enviar</button>
 
-        <script>
-          function mostrarMensaje() {
-            alert("Enviado");
-          }
-        </script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+          <script>
+            $(document).ready(function() {
+              $('#contacto').submit(function(event) {
+                event.preventDefault(); // Evita que el formulario se envíe por defecto
+              
+                var name = $('#name').val();
+                var email = $('#email').val();
+                var message = $('#message').val();
+              
+                if (name && email && message) {
+                  alert('Enviado');
+                  // Restablecer los valores de los campos a su estado inicial
+                  $('#name').val('');
+                  $('#email').val('');
+                  $('#message').val('');
+                }
+              });
+            });
+          </script>
       </form>
     </div>
     <!-- Sección noticias del club o relacionadas -->
@@ -239,7 +254,7 @@
       </div>
     </div>
     <!-- Footer -->
-    <footer class="bg-light py-3">
+    <footer class="bg-light py-3" id="footer">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-3">
