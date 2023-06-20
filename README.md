@@ -4,12 +4,12 @@ Sistema operativo: indiferente, el desarrollo se hizo por completo en Windows.
 Navegador: preferible Chrome.
 Librerias: estan todas las librerias necesarias integradas en el proyecto, algunas necesitan conexión a internet.
 
-#Base de datos a importar ya sea en local en XAMPP/MySQL o en un host en su sitio respectivo
-
-
-
-
-
+Primero necesitamos instalar XAMPP desde el sitio web oficial.
+Segundo iniciar los servidor de XAMPP y activar tambien el MySQL
+Tercero copiar el código de abajo
+Cuarto descargarte la carpeta del proyecto y pegarla en C:\xampp\htdocs\xampp 
+Quinto acceder a la pagina con [localhost](http://localhost/xampp/)
+#Codigo para levantar la base de datos ya sea en local en XAMPP/MySQL o en un host en su sitio respectivo 
 
 
 -- phpMyAdmin SQL Dump
